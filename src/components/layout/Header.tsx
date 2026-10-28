@@ -2,11 +2,15 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { Button } from '@/components/ui/Button'
 
 export function Header({ locale }: { locale: string }) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const pathname = usePathname()
+  const isHomePage = pathname === `/${locale}`
+  const isTransparent = isHomePage && !isScrolled && !isMenuOpen
 
   useEffect(() => {
     const updateScrollState = () => setIsScrolled(window.scrollY > 40)
@@ -29,11 +33,11 @@ export function Header({ locale }: { locale: string }) {
   const closeMenu = () => setIsMenuOpen(false)
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[color:var(--color-line)] bg-[color:var(--color-paper)]">
+    <header className={`${isHomePage ? 'fixed' : 'sticky'} inset-x-0 top-0 z-50 border-b transition-[background-color,border-color] duration-300 ${isTransparent ? 'border-transparent bg-transparent text-white' : 'border-[color:var(--color-line)] bg-[color:var(--color-paper)] text-[color:var(--color-ink)]'}`}>
       <div className={`relative max-w-6xl mx-auto px-4 flex items-center justify-between gap-4 transition-[padding] duration-300 ${isScrolled ? 'py-1.5' : 'py-3'}`}>
         <Link href={`/${locale}`} className="flex shrink-0 items-center" aria-label="RT Group home">
           <Image
-            src="/logo/RT%20Group%20Tech%20Logo.png"
+            src={isTransparent ? '/logo/initial.png' : '/logo/RT%20Group%20Tech%20Logo.png'}
             alt="RT Group — In technology we hatch"
             width={1774}
             height={887}
@@ -54,11 +58,13 @@ export function Header({ locale }: { locale: string }) {
           <div className="text-xs" style={{fontFamily: 'var(--font-mono)', letterSpacing: '+0.06em'}}>
             <Link href="/en">EN</Link>
           </div>
-          <Button>Apply</Button>
+          <Link href={`/${locale}/training/apply`}>
+            <Button>Apply</Button>
+          </Link>
         </div>
         <button
           type="button"
-          className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-md border border-[color:var(--color-line)] text-[color:var(--color-ink)] transition-colors hover:bg-[color:var(--color-surface)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--color-sky-deep)] lg:hidden"
+          className={`inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-md border transition-colors hover:bg-[color:var(--color-surface)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--color-sky-deep)] lg:hidden ${isTransparent ? 'border-white/60 text-white hover:!bg-white/10' : 'border-[color:var(--color-line)] text-[color:var(--color-ink)]'}`}
           aria-label={isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
           aria-expanded={isMenuOpen}
           aria-controls="mobile-navigation"
@@ -81,7 +87,7 @@ export function Header({ locale }: { locale: string }) {
         <nav
           id="mobile-navigation"
           aria-label="Mobile navigation"
-          className="absolute left-0 right-0 top-full border-b border-[color:var(--color-line)] bg-[color:var(--color-paper)] px-4 pb-5 pt-2 shadow-lg lg:hidden"
+          className="absolute left-0 right-0 top-full border-b border-[color:var(--color-line)] bg-[color:var(--color-paper)] px-4 pb-5 pt-2 text-[color:var(--color-ink)] shadow-lg lg:hidden"
           style={{fontFamily: 'var(--font-body)'}}
         >
           <div className="mx-auto flex max-w-6xl flex-col">
@@ -97,7 +103,7 @@ export function Header({ locale }: { locale: string }) {
             <Link href={`/${locale}/contact`} onClick={closeMenu} className="py-3">Contact</Link>
             <div className="mt-3 flex items-center justify-between">
               <Link href="/en" onClick={closeMenu} className="text-xs" style={{fontFamily: 'var(--font-mono)', letterSpacing: '+0.06em'}}>EN</Link>
-              <Link href={`/${locale}/rt-program/apply`} onClick={closeMenu}>
+              <Link href={`/${locale}/training/apply`} onClick={closeMenu}>
                 <Button>Apply</Button>
               </Link>
             </div>
