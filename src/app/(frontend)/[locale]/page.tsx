@@ -109,7 +109,7 @@ export default async function HomePage({ params }: { params: Promise<{locale: st
       <section className="max-w-6xl mx-auto px-4 py-14">
         <Reveal><SectionHeader index="04" title="Featured work" /></Reveal>
         <div className="grid md:grid-cols-3 gap-6">
-          {[{src:'/gallery/123.jpg.jpeg',title:'Workshop Builds',desc:'Hands-on engineering projects from the lab.',href:`/${locale}/projects`},{src:'/training/#HSW2026 We are reading this in technlogies🔥🔥 (2).jpg.jpeg',title:'Training Highlights',desc:'Practical skills developed through learning by doing.',href:`/${locale}/training`},{src:'/gallery/607174953_122165004086783138_5061157649785967358_n.jpg.jpeg',title:'From the Bench Wall',desc:'Moments captured in the workshop.',href:`/${locale}/gallery`}].map((card,i)=>(
+          {[{src:'/gallery/123.jpg.jpeg',title:'Workshop Builds',desc:'Hands-on engineering projects from the lab.',href:`/${locale}/projects`},{src:'/training/%23HSW2026 We are reading this in technlogies🔥🔥 (2).jpg.jpeg',title:'Training Highlights',desc:'Practical skills developed through learning by doing.',href:`/${locale}/training`},{src:'/gallery/607174953_122165004086783138_5061157649785967358_n.jpg.jpeg',title:'From the Bench Wall',desc:'Moments captured in the workshop.',href:`/${locale}/gallery`}].map((card,i)=>(
             <Reveal key={i} className="h-full">
               <div className="border border-[color:var(--color-line)] p-4 h-full card-hover">
                 <RealImage src={card.src} alt={card.title} ratio="4/3" />

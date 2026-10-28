@@ -18,7 +18,7 @@ export default async function TrainingPage({ params }: { params: Promise<{locale
             We focus on hands-on practice, guided mentorship, and applying what you learn to real tasks.
           </p>
         </div>
-        <RealImage src="/training/#HSW2026 We are reading this in technlogies🔥🔥 (2).jpg.jpeg" alt="Training session" ratio="4/3" />
+        <RealImage src="/training/%23HSW2026 We are reading this in technlogies🔥🔥 (2).jpg.jpeg" alt="Training session" ratio="4/3" />
       </section>
 
       <section className="section-wash">

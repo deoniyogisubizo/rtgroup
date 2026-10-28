@@ -4,8 +4,8 @@ import { RealVideo } from '@/components/media/RealVideo'
 const images = [
   { src: '/gallery/456.jpg.jpeg', alt: 'Workshop activity', id: 'RT-0001' },
   { src: '/gallery/123.jpg.jpeg', alt: 'Hands-on training', id: 'RT-0002' },
-  { src: '/gallery/#HSW2026 We are reading this in technlogies🔥🔥.jpg.jpeg', alt: 'Tech learning session', id: 'RT-0003' },
-  { src: '/gallery/#HSW2026 We are reading this in technlogies🔥🔥 (1).jpg.jpeg', alt: 'Workshop participants', id: 'RT-0004' },
+  { src: '/gallery/%23HSW2026 We are reading this in technlogies🔥🔥.jpg.jpeg', alt: 'Tech learning session', id: 'RT-0003' },
+  { src: '/gallery/%23HSW2026 We are reading this in technlogies🔥🔥 (1).jpg.jpeg', alt: 'Workshop participants', id: 'RT-0004' },
   { src: '/gallery/607174953_122165004086783138_5061157649785967358_n.jpg.jpeg', alt: 'Practical session', id: 'RT-0005' },
   { src: '/gallery/607970264_122165004032783138_7507088222027273441_n.jpg.jpeg', alt: 'Workshop moment', id: 'RT-0006' },
   { src: '/gallery/WhatsApp Image 2026-10-27 at 21.57.09.jpeg', alt: 'Working station', id: 'RT-0007' },
