@@ -102,7 +102,7 @@ export default async function HomePage({ params }: { params: Promise<{locale: st
       <section className="section-wash">
         <div className="max-w-6xl mx-auto px-4 py-14">
           <Reveal><SectionHeader index="03" title="Inside the workshop" /></Reveal>
-          <Reveal><RealVideo src="/gallery/MVI_1467.MOV" title="Inside the workshop" /></Reveal>
+          <Reveal><RealVideo src="/video/workshop-action.mp4" poster="/video/workshop-action.webp" title="Inside the workshop" /></Reveal>
         </div>
       </section>
 

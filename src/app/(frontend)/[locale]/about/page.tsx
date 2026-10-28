@@ -1,7 +1,7 @@
 import { SectionHeader } from '@/components/ui/SectionHeader'
 import { TextLink } from '@/components/ui/TextLink'
 import { Button } from '@/components/ui/Button'
-import { RealImage } from '@/components/media/RealImage'
+import { RealVideo } from '@/components/media/RealVideo'
 import Link from 'next/link'
 
 const areas = [
@@ -99,7 +99,7 @@ export default async function AboutPage({ params }: { params: Promise<{locale: s
 
       <section className="max-w-6xl mx-auto px-4 py-12">
         <SectionHeader index="06" title="Workshop" />
-        <RealImage src="/about/MVI_1470.MOV" alt="RTGroup workshop" ratio="16/9" />
+        <RealVideo src="/video/rtgroup-workshop.mp4" poster="/video/rtgroup-workshop.webp" title="RTGroup workshop" />
       </section>
 
       <section className="max-w-6xl mx-auto px-4 py-12 flex gap-4 flex-wrap">

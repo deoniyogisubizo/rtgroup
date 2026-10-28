@@ -19,9 +19,9 @@ const images = [
 ]
 
 const videos = [
-  { src: '/gallery/MVI_1467.MOV', title: 'Workshop in action' },
-  { src: '/gallery/MVI_1466 - Copy.MOV', title: 'Hands-on learning' },
-  { src: '/gallery/MVI_1470.MOV', title: 'RTGroup workshop' },
+  { src: '/video/workshop-action.mp4', poster: '/video/workshop-action.webp', title: 'Workshop in action' },
+  { src: '/video/hands-on-learning.mp4', poster: '/video/hands-on-learning.webp', title: 'Hands-on learning' },
+  { src: '/video/rtgroup-workshop.mp4', poster: '/video/rtgroup-workshop.webp', title: 'RTGroup workshop' },
 ]
 
 export default function GalleryPage() {
@@ -52,7 +52,7 @@ export default function GalleryPage() {
           <h2 style={{fontFamily: 'var(--font-heading)', fontWeight: 600}}>Workshop Videos</h2>
           <div className="mt-4 grid md:grid-cols-3 gap-6">
             {videos.map((v, i) => (
-              <RealVideo key={i} src={v.src} title={v.title} />
+              <RealVideo key={i} src={v.src} poster={v.poster} title={v.title} />
             ))}
           </div>
         </div>
