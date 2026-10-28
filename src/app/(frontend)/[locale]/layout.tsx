@@ -14,7 +14,7 @@ const siteHost = process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_PROJECT_
 const siteUrl = siteHost
   ? new URL(siteHost.startsWith('http') ? siteHost : `https://${siteHost}`)
   : undefined
-const socialPreviewImage = '/home/%23HSW2026%20We%20are%20reading%20this%20in%20technlogies%F0%9F%94%A5%F0%9F%94%A5%20(2).jpg.jpeg'
+const socialPreviewImage = '/home/home-1.jpg'
 
 const familjen = Familjen_Grotesk({ subsets: ['latin'], weight: ['600','700'], variable: '--font-heading' })
 const publicSans = Public_Sans({ subsets: ['latin'], weight: ['400','500'], variable: '--font-body' })

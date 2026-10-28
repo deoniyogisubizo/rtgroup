@@ -29,7 +29,7 @@ export default async function ServicesPage({ params }: { params: Promise<{locale
             From embedded systems and IoT to prototyping and technical support.
           </p>
         </div>
-        <RealImage src="/services/456.jpg.jpeg" alt="Electronics work" ratio="4/3" />
+        <RealImage src="/services/services-1.jpg" alt="Electronics work" ratio="4/3" />
       </section>
 
       <section className="section-wash">

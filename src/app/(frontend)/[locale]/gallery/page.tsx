@@ -2,20 +2,21 @@ import { RealImage } from '@/components/media/RealImage'
 import { RealVideo } from '@/components/media/RealVideo'
 
 const images = [
-  { src: '/gallery/456.jpg.jpeg', alt: 'Workshop activity', id: 'RT-0001' },
-  { src: '/gallery/123.jpg.jpeg', alt: 'Hands-on training', id: 'RT-0002' },
-  { src: '/gallery/%23HSW2026 We are reading this in technlogies🔥🔥.jpg.jpeg', alt: 'Tech learning session', id: 'RT-0003' },
-  { src: '/gallery/%23HSW2026 We are reading this in technlogies🔥🔥 (1).jpg.jpeg', alt: 'Workshop participants', id: 'RT-0004' },
-  { src: '/gallery/607174953_122165004086783138_5061157649785967358_n.jpg.jpeg', alt: 'Practical session', id: 'RT-0005' },
-  { src: '/gallery/607970264_122165004032783138_7507088222027273441_n.jpg.jpeg', alt: 'Workshop moment', id: 'RT-0006' },
-  { src: '/gallery/WhatsApp Image 2026-10-27 at 21.57.09.jpeg', alt: 'Working station', id: 'RT-0007' },
-  { src: '/gallery/WhatsApp Image 2026-10-27 at 21.57.10.jpeg', alt: 'Workshop work', id: 'RT-0008' },
-  { src: '/gallery/WhatsApp Image 2026-04-10 at 13.04.13.jpeg', alt: 'Training activity', id: 'RT-0009' },
-  { src: '/gallery/Another day another workshop in internship with them from different schools.webp', alt: 'Internship workshop', id: 'RT-0010' },
-  { src: '/gallery/Building a future-ready workforce starts with skills! 💡 Our program prepares graduates for ICT (1).webp', alt: 'Future-ready workforce', id: 'RT-0011' },
-  { src: '/gallery/ChatGPT Image Jul 5, 2026, 07_11_14 PM.png', alt: 'RTGroup activity', id: 'RT-0012' },
-  { src: '/gallery/ChatGPT Image May 15, 2026, 08_20_03 PM (1).png', alt: 'Workshop session', id: 'RT-0013' },
-  { src: '/gallery/ChatGPT Image May 15, 2026, 08_20_03 PM (2).png', alt: 'Practical learning', id: 'RT-0014' },
+  { src: '/gallery/gallery-2.jpg', alt: 'Workshop activity', id: 'RT-0001' },
+  { src: '/gallery/gallery-1.jpg', alt: 'Hands-on training', id: 'RT-0002' },
+  { src: '/gallery/gallery-14.jpg', alt: 'Tech learning session', id: 'RT-0003' },
+  { src: '/gallery/gallery-12.jpg', alt: 'Workshop participants', id: 'RT-0004' },
+  { src: '/gallery/gallery-4.jpg', alt: 'Practical session', id: 'RT-0005' },
+  { src: '/gallery/gallery-5.jpg', alt: 'Workshop moment', id: 'RT-0006' },
+  { src: '/gallery/gallery-18.jpg', alt: 'Working station', id: 'RT-0007' },
+  { src: '/gallery/gallery-19.jpg', alt: 'Workshop work', id: 'RT-0008' },
+  { src: '/gallery/gallery-15.jpg', alt: 'Training activity', id: 'RT-0009' },
+  { src: '/gallery/gallery-6.webp', alt: 'Internship workshop', id: 'RT-0010' },
+  { src: '/gallery/gallery-7.webp', alt: 'Future-ready workforce', id: 'RT-0011' },
+  { src: '/gallery/gallery-8.png', alt: 'RTGroup activity', id: 'RT-0012' },
+  { src: '/gallery/gallery-9.png', alt: 'Workshop session', id: 'RT-0013' },
+  { src: '/gallery/gallery-10.png', alt: 'Practical learning', id: 'RT-0014' },
+  { src: '/gallery/gallery-11.jpg', alt: 'RTGroup activity', id: 'RT-0015' },
 ]
 
 const videos = [

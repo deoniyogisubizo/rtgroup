@@ -42,7 +42,7 @@ export default async function HomePage({ params }: { params: Promise<{locale: st
         </Reveal>
         <Reveal direction="right">
           <RealImage
-            src="/home/%23HSW2026%20We%20are%20reading%20this%20in%20technlogies%F0%9F%94%A5%F0%9F%94%A5%20(2).jpg.jpeg"
+            src="/home/home-1.jpg"
             alt="RTGroup workshop"
             ratio="4/3"
             priority
@@ -93,7 +93,7 @@ export default async function HomePage({ params }: { params: Promise<{locale: st
               </div>
             </Reveal>
             <Reveal direction="right">
-              <RealImage src="/rt-program/FG_6ELVypestdo4Qwqu9Seu-eqdiBzFmZpRpdpevuDenjBLZNjWkrdMBEas64Su8LG93XIp32Nr0u2zpEXTT6rnlJ_f1wVwu29TWQQsDWhxXiW5aJqOuFJa1_zgz7crZRCJqmg1Gq1E0K7hRufXyX293LUaPCjNge9eHs_wXWWzubr39_tVEALZ6cQjWrCDa.jfif.jpeg" alt="Girls working together on a technology project" ratio="4/3" />
+              <RealImage src="/rt-program/rt-program-1.jpg" alt="Girls working together on a technology project" ratio="4/3" />
             </Reveal>
           </div>
         </div>
@@ -109,7 +109,7 @@ export default async function HomePage({ params }: { params: Promise<{locale: st
       <section className="max-w-6xl mx-auto px-4 py-14">
         <Reveal><SectionHeader index="04" title="Featured work" /></Reveal>
         <div className="grid md:grid-cols-3 gap-6">
-          {[{src:'/gallery/123.jpg.jpeg',title:'Workshop Builds',desc:'Hands-on engineering projects from the lab.',href:`/${locale}/projects`},{src:'/training/%23HSW2026 We are reading this in technlogies🔥🔥 (2).jpg.jpeg',title:'Training Highlights',desc:'Practical skills developed through learning by doing.',href:`/${locale}/training`},{src:'/gallery/607174953_122165004086783138_5061157649785967358_n.jpg.jpeg',title:'From the Bench Wall',desc:'Moments captured in the workshop.',href:`/${locale}/gallery`}].map((card,i)=>(
+          {[{src:'/gallery/gallery-1.jpg',title:'Workshop Builds',desc:'Hands-on engineering projects from the lab.',href:`/${locale}/projects`},{src:'/training/training-1.jpg',title:'Training Highlights',desc:'Practical skills developed through learning by doing.',href:`/${locale}/training`},{src:'/gallery/gallery-4.jpg',title:'From the Bench Wall',desc:'Moments captured in the workshop.',href:`/${locale}/gallery`}].map((card,i)=>(
             <Reveal key={i} className="h-full">
               <div className="border border-[color:var(--color-line)] p-4 h-full card-hover">
                 <RealImage src={card.src} alt={card.title} ratio="4/3" />

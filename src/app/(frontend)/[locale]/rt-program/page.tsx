@@ -42,7 +42,7 @@ export default async function RTProgramPage({ params }: { params: Promise<{local
             </div>
           </div>
           <div className="space-y-4">
-            <RealImage src="/rt-program/FG_6ELVypestdo4Qwqu9Seu-eqdiBzFmZpRpdpevuDenjBLZNjWkrdMBEas64Su8LG93XIp32Nr0u2zpEXTT6rnlJ_f1wVwu29TWQQsDWhxXiW5aJqOuFJa1_zgz7crZRCJqmg1Gq1E0K7hRufXyX293LUaPCjNge9eHs_wXWWzubr39_tVEALZ6cQjWrCDa.jfif.jpeg" alt="Girls in Technology" ratio="3/2" />
+            <RealImage src="/rt-program/rt-program-1.jpg" alt="Girls in Technology" ratio="3/2" />
             <RealVideo src="/video/rt-program.mp4" poster="/video/rt-program.webp" title="RT Program" />
           </div>
         </div>
