@@ -64,11 +64,15 @@ export function Header({ locale }: { locale: string }) {
           aria-controls="mobile-navigation"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" className="h-6 w-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+          <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6" fill="currentColor">
             {isMenuOpen ? (
-              <path d="M6 6l12 12M18 6L6 18" />
+              <path d="M6.7 5.3 12 10.6l5.3-5.3 2.1 2.1-5.3 5.3 5.3 5.3-2.1 2.1-5.3-5.3-5.3 5.3-2.1-2.1 5.3-5.3-5.3-5.3z" />
             ) : (
-              <path d="M4 6h16M4 12h16M4 18h16" />
+              <>
+                <rect x="3" y="5" width="18" height="2.5" rx="1.25" />
+                <rect x="3" y="10.75" width="18" height="2.5" rx="1.25" />
+                <rect x="3" y="16.5" width="18" height="2.5" rx="1.25" />
+              </>
             )}
           </svg>
         </button>
