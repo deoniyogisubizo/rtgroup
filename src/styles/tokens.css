@@ -1,0 +1,12 @@
+:root {
+  /* RTGroup Design Tokens */
+  --color-paper: #F4F5F2;
+  --color-surface: #FFFFFF;
+  --color-ink: #0C1A2A;
+  --color-muted: #5A6877;
+  --color-line: #D9DEE2;
+  --color-sky: #4DB6F0;
+  --color-sky-deep: #0B6EA8;
+  --color-urgent: #FFC21A;
+  --color-wine: #7A1F2B;
+}

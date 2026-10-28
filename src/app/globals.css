@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+html {
+  zoom: 1.1;
+}
+
+.tech-photo-section {
+  position: relative;
+  isolation: isolate;
+  color: #fff;
+  background: url('/brand/technology-background.jpg') center 55% / cover no-repeat;
+}
+
+.tech-photo-section::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.68);
+  content: '';
+}
+
+.tech-photo-section a {
+  color: var(--color-sky);
+}
+
+/* Subtle light blue background wash for sections */
+.section-wash {
+  background: rgba(77, 182, 240, 0.06);
+}
+
+/* Card-like elements get 5px spacing feel via border + padding treatment */
+.card-frame {
+  border: 1px solid var(--color-line);
+  padding: 1.25rem;
+}
+
+.card-frame:hover {
+  border-width: 1px;
+}
+
+/* Apply consistent 5px-ish visual margin/border treatment to common cards */
+.border {
+  border-width: 1px;
+}
+
+[class*="border border-[color:var(--color-line)]"] {
+  outline: none;
+}
+
+/* Ensure card containers have breathing room */
+.border.border-\[color\:var\(--color-line\)\] {
+  padding: 1.25rem;
+}
+
+/* Smooth scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal-right {
+  opacity: 0;
+  transform: translateX(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal-left.in-view,
+.reveal-right.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Card hover lift */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(12, 26, 42, 0.06);
+}
+
+/* Tight card borders */
+.tight-card {
+  border: 1px solid var(--color-line);
+  padding: 1rem 1.25rem;
+}
+
+/* Marquee for gallery strip */
+.marquee {
+  display: flex;
+  gap: 1rem;
+  animation: marquee 40s linear infinite;
+}
+.marquee:hover {
+  animation-play-state: paused;
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee { animation: none; }
+  .reveal, .reveal-left, .reveal-right { transition: none; transform: none; opacity: 1; }
+}
+
+/* Force rounded corners on buttons and common CTAs */
+button, .btn, [role="button"] {
+  border-radius: 6px;
+}
